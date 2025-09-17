@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilwaa36</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Thunderbolts/Thunderbolts/tb.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="hero-section" id="mainn">
+        <video autoplay muted loop class="background-video">
+            <source src="IMG_3959.MOV" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="logo.png" alt="Bilwaa36 Logo">
+                        </div>
+                        <div class="cafe-logo">
+                            <a href="Thunder.html" title="Visit our Cafe">
+                                <img src="images/WhatsApp_Image_2025-06-02_at_13.17.16_41f05a52-removebg-preview.png" alt="Thunderbolts Cafe">
+                            </a>
+                        </div>
+                    </div>
+                    <button id="hamburgerBtn" class="hamburger" aria-label="Open navigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul>
+                        <li><a href="#mainn">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#111">Gallery</a></li>
+                        <li><a href="#123">Menu</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="Thunder.html" id="switchToCafeBtn">Switch to Cafe</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <h1>Welcome to Bilwaa36</h1>
+            <p>Fine Dining Restaurant</p>
+        </div>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p class="about-description">
+                    Welcome to Bilwaa36, where passion meets authentic vegetarian cuisine. Founded in 2024, we are a new culinary destination dedicated to bringing you the finest vegetarian dining experience.
+                </p>
+                <div class="about-features">
+                    <div class="feature">
+                        <h3>Our Vision</h3>
+                        <p>To create a warm, inviting space where food lovers can experience the rich heritage of vegetarian cuisine, prepared with modern culinary techniques.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Our Promise</h3>
+                        <p>We use only the freshest ingredients, sourced locally whenever possible, to ensure every dish is a celebration of authentic flavors and pure vegetarian goodness.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Our Commitment</h3>
+                        <p>Every dish is prepared with love and attention to detail, maintaining the highest standards of hygiene and quality in our kitchen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="./aboutusimg.jpeg" alt="Bilwaa36 Restaurant Interior">
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="111">
+        <div class="gallery-container">
+            <h2 class="gallery-underline">Gallery</h2>
+            <div class="gallery-grid">
+                <img src="./bilwa-img.jpeg" alt="Bilwaa36 Restaurant Interior">
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="123">
+        <h2 class="heading-underline">Our Authentic Menu</h2>
+        <div class="container1">
+            <div class="carousel">
+                <div class="slides" id="slides">
+                    <!-- Slides will be injected dynamically -->
+                </div>
+                <div class="buttons">
+                    <button class="btn" id="prevBtn"><i class="fas fa-angles-left"></i></button>
+                    <button class="btn" id="nextBtn"><i class="fas fa-angles-right"></i></button>
+                </div>
+                <div class="indicators" id="indicators"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="offer-quote">Claim Your Exclusive Foodie Offer!</h2>
+            <form id="bilwaaContactForm" action="https://formspree.io/f/mzzgdopl" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" required placeholder="Enter your mobile number">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                                                    
+                <button type="submit" class="submit-btn">Claim Your Offer</button>
+            </form>
+            <div id="thankYouMsg" style="display:none;text-align:center;padding:2rem 0;font-size:1.3rem;color:#006400;font-weight:600;">"Thank you for joining the Bilwaa36 family! Your exclusive offer is on its way—get ready for a delicious surprise!"</div>
+        </div>
+    </section>
+    <section id="events" class="events-section" id="123">
+        <div class="events-container">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="ev3.webp" alt="Live Music Night">
+                        <div class="event-date">
+                            <span class="day">Every</span>
+                            <span class="time">Friday</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Live Music Night</h3>
+                        <p>Experience the magic of live performances every Friday night. From soulful melodies to energetic beats, our talented artists will keep you entertained.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 8:00 PM - 11:00 PM</span>
+                            <span><i class="fas fa-music"></i> Live Band</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="ev1.jpg" alt="Ladies Night">
+                        <div class="event-date">
+                            <span class="day">Every</span>
+                            <span class="time">Wednesday</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Ladies Night</h3>
+                        <p>Join us for an exclusive evening of fun, music, and special treats. Enjoy complimentary welcome drinks and exciting offers exclusively for ladies.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 7:00 PM - 11:00 PM</span>
+                            <span><i class="fas fa-glass-cheers"></i> Special Offers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="ev2.jpg" alt="Weekend Party">
+                        <div class="event-date">
+                            <span class="day">Every</span>
+                            <span class="time">Saturday</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Weekend Party</h3>
+                        <p>Dance the night away with our weekend party specials. Enjoy great music, delicious food, and an amazing atmosphere with friends and family.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-clock"></i> 9:00 PM - 1:00 AM</span>
+                            <span><i class="fas fa-dancing"></i> DJ Night</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="reviews-container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-carousel-wrapper">
+                <button class="reviews-nav reviews-nav-left" aria-label="Previous reviews">&#8592;</button>
+                <div class="reviews-grid carousel-track">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmoji.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Priya Sharma</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"The authentic vegetarian flavors here are simply amazing! The Paneer Tikka is perfectly spiced and the ambiance is so welcoming. A must-visit for food lovers!"</p>
+                        <div class="review-category">Food Experience</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmojimen.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Rahul Patel</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"The restaurant's design is modern yet cozy. The lighting and seating arrangements create the perfect atmosphere for both family dinners and casual meetups."</p>
+                        <div class="review-category">Ambiance</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmoji.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Ananya Gupta</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"The attention to detail in every dish is remarkable. The presentation is beautiful, and the flavors are authentic. The staff's hospitality makes the experience even better!"</p>
+                        <div class="review-category">Overall Experience</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmoji.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Sameer Tiwari</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"A hidden gem! The desserts are heavenly and the ambiance is perfect for relaxing."</p>
+                        <div class="review-category">Desserts</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmojimen.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Meera D.</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Bilwaa36 never disappoints. The new menu items are delicious!"</p>
+                        <div class="review-category">Menu</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmoji.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Vikram P.</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Perfect place for a quick coffee break or a long chat with friends."</p>
+                        <div class="review-category">Coffee Break</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmojimen.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Sneha R.</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"The interiors are stunning and the service is top-notch. Highly recommend!"</p>
+                        <div class="review-category">Service</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="./bitmoji.jpg" alt="Customer" class="customer-image">
+                            <div class="reviewer-info">
+                                <h3>Arjun V.</h3>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"The staff is always welcoming and the coffee is consistently great. My go-to spot!"</p>
+                        <div class="review-category">Staff</div>
+                    </div>
+                </div>
+                <button class="reviews-nav reviews-nav-right" aria-label="Next reviews">&#8594;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-map">
+                 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d237.9109276209257!2d78.40699606870074!3d17.432179568591856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1749213020287!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Bilwaa36 Logo">
+                    <p>Experience authentic vegetarian cuisine in a modern setting.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Rd No 36, Jubilee Hills, Hyderabad, Telangana</li>
+                        <li><i class="fas fa-phone"></i> +91 9866650027, +91 9063498878</li>
+                        <li><i class="fas fa-envelope"></i> info@bilwaa36.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/people/Bilwaa-Restaurants/pfbid028K6FhJu1haXHCAXh7PqKUpwToAACMMRXUwKujx753Rom9ufHqyAFZDNvdj6z6RRul/" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/_bilwaa36_/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Bilwaa36" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/channel/UChkx559jJ1bQSe_cLDL5Zbg" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bilwaa36. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Offer Popup -->
+    <div id="offerPopup" class="offer-popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <img src="./Untitled design (2).png" alt="Special Offer" class="offer-image">
+            <div class="offer-text">
+                <h3>Special Offer!</h3>
+                <p>Get 15% off on your first visit!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cafe Modal -->
+    <div id="cafeModal" class="modal">
+        <div class="modal-content">
+            <span id="closeCafeModal" class="close">&times;</span>
+            <h2>Switch to Cafe Mode</h2>
+            <p>Are you sure you want to switch to cafe mode?</p>
+            <div class="modal-buttons">
+                <button id="confirmSwitch" class="confirm-btn">Yes, Switch</button>
+                <button id="cancelSwitch" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advanced Chatbot Widget -->
+<style>
+#chatbot-widget {
+  position: fixed;
+  bottom: 160px;
+  right: 30px;
+  width: 350px;
+  max-width: 90vw;
+  z-index: 9999;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+#chatbot-header {
+  background: #226d22;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 16px 16px 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#chatbot-header .chatbot-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#chatbot-header .chatbot-close {
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+}
+#chatbot-body {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 16px 12px 12px 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#chatbot-input-area {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px 12px 12px;
+  background: #fff;
+  border-radius: 0 0 16px 16px;
+  border-top: 1px solid #eee;
+}
+#chatbot-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-size: 1rem;
+}
+#chatbot-send-btn {
+  background: #226d22;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#chatbot-send-btn:hover {
+  background: #226d22;
+}
+.chatbot-bubble {
+  max-width: 80%;
+  margin-bottom: 6px;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: inline-block;
+  animation: fadeIn 0.3s;
+}
+.chatbot-bubble.bot {
+  background: #f2f0fa;
+  color: #226d22;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+.chatbot-bubble.user {
+  background: #226d22;
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+.chatbot-quick-replies {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0 0 0;
+  flex-wrap: wrap;
+}
+.chatbot-quick-reply {
+  background: #e6e0f7;
+  color: #226d22;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.chatbot-quick-reply:hover {
+  background: #d1c3f1;
+}
+#chatbot-widget.minimized #chatbot-body,
+#chatbot-widget.minimized #chatbot-input-area {
+  display: none;
+}
+#chatbot-widget.minimized {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  background: #226d22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#chatbot-widget.minimized #chatbot-header {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: none;
+  cursor: pointer;
+  background-image: url('cartoon-style-robot-vectorart.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#chatbot-widget.minimized .chatbot-title,
+#chatbot-widget.minimized .chatbot-close {
+  display: none !important;
+}
+#chatbot-widget.minimized .chatbot-avatar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-size: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background: none;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Reservation form in chat */
+#chatbot-reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+#chatbot-reservation-form input,
+#chatbot-reservation-form select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+#chatbot-reservation-form button {
+  background: #226d22;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 6px;
+}
+#chatbot-reservation-form button:hover {
+  background: #226d22;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+  will-change: opacity, transform;
+}
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
+@media (max-width: 600px) {
+    #chatbot-widget {
+        width: 45vw;
+        max-width: 98vw;
+        min-width: 0;
+        right: 1vw;
+        bottom: 45vw;
+        border-radius: 16px !important;
+    }
+  #chatbot-header {
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 16px 16px 0 0;
+  }
+  #chatbot-body {
+    padding: 10px 6px 6px 6px;
+    max-height: 260px;
+    font-size: 0.97rem;
+  }
+  #chatbot-input-area {
+    padding: 7px 6px 8px 6px;
+  }
+  #chatbot-input {
+    font-size: 0.97rem;
+    padding: 6px 7px;
+  }
+  #chatbot-send-btn {
+    font-size: 0.97rem;
+    padding: 6px 10px;
+  }
+  .chatbot-bubble {
+    font-size: 0.97rem;
+    padding: 8px 10px;
+    max-width: 95%;
+  }
+  .chatbot-quick-replies {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .chatbot-quick-reply {
+    font-size: 0.97rem;
+    padding: 6px 10px;
+  }
+  #chatbot-reservation-form input,
+  #chatbot-reservation-form select {
+    font-size: 0.97rem;
+    padding: 5px 7px;
+  }
+  #chatbot-reservation-form button {
+    font-size: 0.97rem;
+    padding: 6px 10px;
+  }
+}
+</style>
+<div id="chatbot-widget" class="minimized">
+  <div id="chatbot-header">
+    <span class="chatbot-title"><span class="chatbot-avatar">🤖</span></span>
+    <button class="chatbot-close" title="Minimize">–</button>
+  </div>
+  <div id="chatbot-body"></div>
+  <div id="chatbot-input-area" style="display:none;">
+    <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off" />
+    <button id="chatbot-send-btn">Send</button>
+  </div>
+</div>
+<script>
+(function() {
+  // --- Chatbot State ---
+  const widget = document.getElementById('chatbot-widget');
+  const header = document.getElementById('chatbot-header');
+  const closeBtn = header.querySelector('.chatbot-close');
+  const body = document.getElementById('chatbot-body');
+  const inputArea = document.getElementById('chatbot-input-area');
+  const input = document.getElementById('chatbot-input');
+  const sendBtn = document.getElementById('chatbot-send-btn');
+  let userName = localStorage.getItem('bilwaa36_user_name') || null;
+  let awaitingName = false;
+  let awaitingReservation = false;
+  let reservationData = {};
+
+  // --- Chatbot UI ---
+  function scrollToBottom() {
+    setTimeout(() => { body.scrollTop = body.scrollHeight; }, 100);
+  }
+  function addBubble(text, sender = 'bot', html = false) {
+    const bubble = document.createElement('div');
+    bubble.className = 'chatbot-bubble ' + sender;
+    if (html) bubble.innerHTML = text;
+    else bubble.textContent = text;
+    body.appendChild(bubble);
+    scrollToBottom();
+  }
+  function addQuickReplies(options) {
+    const container = document.createElement('div');
+    container.className = 'chatbot-quick-replies';
+    options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'chatbot-quick-reply';
+      btn.textContent = opt.label;
+      btn.onclick = () => {
+        container.remove();
+        handleUserInput(opt.value, true);
+      };
+      container.appendChild(btn);
+    });
+    body.appendChild(container);
+    scrollToBottom();
+  }
+  function showInputArea(show) {
+    inputArea.style.display = show ? '' : 'none';
+    if (show) input.focus();
+  }
+  function minimizeWidget(min) {
+    if (min) {
+      widget.classList.add('minimized');
+      showInputArea(false);
+      body.style.display = 'none';
+      // Only show avatar icon
+      header.querySelector('.chatbot-avatar').style.display = 'flex';
+    } else {
+      widget.classList.remove('minimized');
+      body.style.display = '';
+      showInputArea(!awaitingReservation);
+      header.querySelector('.chatbot-avatar').style.display = 'flex';
+    }
+  }
+  header.onclick = function(e) {
+    if (e.target === closeBtn) {
+      minimizeWidget(true);
+      e.stopPropagation();
+      return;
+    }
+    // Only open if minimized and not clicking close
+    if (widget.classList.contains('minimized')) {
+      minimizeWidget(false);
+    }
+  };
+  widget.onclick = function(e) {
+    if (widget.classList.contains('minimized')) minimizeWidget(false);
+  };
+
+  // --- Chatbot Logic ---
+  function greet() {
+    const greetings = [
+      "Hi! 👋 I'm Bilwaa36 Bot. How can I help you today?",
+      "Welcome to Bilwaa36! 😊 Ready to explore our menu or book a table?",
+      "Hello! Need help with our menu or a reservation?",
+      "Namaste! 🙏 How can I assist you at Bilwaa36 today?",
+      "Hey there! Want to see our menu or reserve a table?",
+      "Greetings from Bilwaa36! How can I make your visit special today?"
+    ];
+    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+    addBubble(randomGreeting);
+    showMainOptions();
+  }
+  function showMainOptions() {
+    addQuickReplies([
+      { label: 'Menu', value: 'menu' },
+      { label: 'Reservation for Table', value: 'reservation' }
+    ]);
+    showInputArea(false);
+  }
+  function handleUserInput(text, fromQuickReply = false) {
+    if (!fromQuickReply) addBubble(text, 'user');
+    // Name detection
+    const nameMatch = text.match(/(?:my name is|i am|i'm|this is)\s+([A-Za-z]+)/i);
+    if (nameMatch) {
+      userName = nameMatch[1];
+      localStorage.setItem('bilwaa36_user_name', userName);
+      addBubble(`Nice to meet you, ${userName}!`);
+      showMainOptions();
+      return;
+    }
+    if (text.toLowerCase() === 'back') {
+      awaitingReservation = false;
+      showMainOptions();
+      return;
+    }
+    if (awaitingReservation) {
+      // Should not happen, handled by form
+      return;
+    }
+    // Main options
+    if (/menu/i.test(text)) {
+      showMenu();
+    } else if (/reservation/i.test(text)) {
+      showReservationForm();
+    } else {
+      addBubble('Please choose an option below:');
+      showMainOptions();
+    }
+  }
+  function showMenu() {
+    // Remove previous menu bubble if exists
+    const prevMenu = document.getElementById('chatbot-menu-bubble');
+    if (prevMenu) prevMenu.remove();
+    // Remove previous menu nav if exists
+    const prevMenuNav = document.getElementById('chatbot-menu-nav');
+    if (prevMenuNav) prevMenuNav.remove();
+    const menuImgs = [
+      'bilwaa_menu_page_1.png',
+      'bilwaa_menu_page_2.png',
+      'bilwaa_menu_page_3.png',
+      'bilwaa_menu_page_4.png',
+      'bilwaa_menu_page_5.png',
+      'bilwaa_menu_page_6.png',
+      'bilwaa_menu_page_7.png',
+      'bilwaa_menu_page_8.png',
+      'bilwaa_menu_page_9.png',
+      'bilwaa_menu_page_10.png',
+      'bilwaa_menu_page_11.png',
+      'bilwaa_menu_page_12.png',
+    ];
+    let idx = 0;
+    function renderMenuImg(i) {
+      // Remove previous menu bubble/nav
+      const prevMenu = document.getElementById('chatbot-menu-bubble');
+      if (prevMenu) prevMenu.remove();
+      const prevMenuNav = document.getElementById('chatbot-menu-nav');
+      if (prevMenuNav) prevMenuNav.remove();
+      // Menu image bubble
+      const bubble = document.createElement('div');
+      bubble.className = 'chatbot-bubble bot';
+      bubble.id = 'chatbot-menu-bubble';
+      bubble.innerHTML = `
+        <div style='text-align:center;'>
+          <img src='${menuImgs[i]}' alt='Menu Page ${i+1}' style='max-width:90%;border-radius:10px;box-shadow:0 2px 8px #0002;margin-bottom:6px;'>
+          <div style='margin:4px 0 0 0;'>Page ${i+1} of ${menuImgs.length}</div>
+        </div>
+      `;
+      body.appendChild(bubble);
+      // Menu nav (Prev/Next/Reservation/Back)
+      const nav = document.createElement('div');
+      nav.className = 'chatbot-quick-replies';
+      nav.id = 'chatbot-menu-nav';
+      // Prev
+      const prevBtn = document.createElement('button');
+      prevBtn.className = 'chatbot-quick-reply';
+      prevBtn.textContent = 'Prev';
+      prevBtn.disabled = i === 0;
+      prevBtn.onclick = () => { idx = Math.max(0, idx-1); renderMenuImg(idx); };
+      nav.appendChild(prevBtn);
+      // Next
+      const nextBtn = document.createElement('button');
+      nextBtn.className = 'chatbot-quick-reply';
+      nextBtn.textContent = 'Next';
+      nextBtn.disabled = i === menuImgs.length-1;
+      nextBtn.onclick = () => { idx = Math.min(menuImgs.length-1, idx+1); renderMenuImg(idx); };
+      nav.appendChild(nextBtn);
+      // Reservation
+      const reservationBtn = document.createElement('button');
+      reservationBtn.className = 'chatbot-quick-reply';
+      reservationBtn.textContent = 'Reservation';
+      reservationBtn.onclick = () => {
+        // Remove menu bubble/nav
+        const prevMenu = document.getElementById('chatbot-menu-bubble');
+        if (prevMenu) prevMenu.remove();
+        const prevMenuNav = document.getElementById('chatbot-menu-nav');
+        if (prevMenuNav) prevMenuNav.remove();
+        showReservationForm();
+      };
+      nav.appendChild(reservationBtn);
+      // Back
+      const backBtn = document.createElement('button');
+      backBtn.className = 'chatbot-quick-reply';
+      backBtn.textContent = 'Back';
+      backBtn.onclick = () => { 
+        // Remove menu bubble/nav
+        const prevMenu = document.getElementById('chatbot-menu-bubble');
+        if (prevMenu) prevMenu.remove();
+        const prevMenuNav = document.getElementById('chatbot-menu-nav');
+        if (prevMenuNav) prevMenuNav.remove();
+        showMainOptions();
+      };
+      nav.appendChild(backBtn);
+      body.appendChild(nav);
+      scrollToBottom();
+    }
+    renderMenuImg(idx);
+  }
+  function showReservationForm() {
+    addBubble('Let\'s reserve a table for you! Please fill in the details below:');
+    awaitingReservation = true;
+    showInputArea(false);
+    const formHtml = `
+      <form id='chatbot-reservation-form'>
+        <input type='text' name='name' placeholder='Your Name' value='${userName||''}' required />
+        <input type='date' name='date' required />
+        <input type='time' name='time' required />
+        <input type='number' name='people' min='1' max='20' placeholder='No. of People' required />
+        <input type='tel' name='phone' placeholder='Contact Number' required pattern='[0-9]{10,}' />
+        <input type='email' name='email' placeholder='Email (optional)' />
+        <button type='submit'>Reserve</button>
+      </form>
+    `;
+    addBubble(formHtml, 'bot', true);
+    // Add Back button as quick reply
+    setTimeout(() => {
+      addQuickReplies([
+        { label: 'Back', value: 'back' }
+      ]);
+      const form = document.getElementById('chatbot-reservation-form');
+      if (form) {
+        form.onsubmit = async function(e) {
+          e.preventDefault();
+          const fd = new FormData(form);
+          reservationData = Object.fromEntries(fd.entries());
+          // Simulate sending reservation (could use Formspree or backend)
+          addBubble('Submitting your reservation...', 'bot');
+          setTimeout(() => {
+            addBubble(`Thank you, ${reservationData.name}! Your table for ${reservationData.people} on ${reservationData.date} at ${reservationData.time} is reserved. We\'ll contact you at ${reservationData.phone}.`, 'bot');
+            awaitingReservation = false;
+            showMainOptions();
+          }, 1200);
+        };
+      }
+    }, 200);
+  }
+
+  // --- Input Handling ---
+  sendBtn.onclick = function() {
+    const val = input.value.trim();
+    if (val) {
+      handleUserInput(val);
+      input.value = '';
+    }
+  };
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') sendBtn.click();
+  });
+
+  // --- Start Chatbot ---
+  // Instead, just greet (so greeting is ready when opened), but do not auto-open
+  greet();
+})();
+</script>
+    <script src="script.js"></script>
+    <script>
+        // Add scroll event listener
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Modal logic for Switch to Cafe
+        const switchToCafeBtn = document.getElementById('switchToCafeBtn');
+        const cafeModal = document.getElementById('cafeModal');
+        const closeCafeModal = document.getElementById('closeCafeModal');
+        const confirmSwitch = document.getElementById('confirmSwitch');
+        const cancelSwitch = document.getElementById('cancelSwitch');
+
+        switchToCafeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            cafeModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeCafeModal.addEventListener('click', function() {
+            cafeModal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+
+        cancelSwitch.addEventListener('click', function() {
+            cafeModal.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+
+        confirmSwitch.addEventListener('click', function() {
+            try {
+                console.log('Attempting to switch to cafe mode...');
+                window.location.replace('Thunder.html');
+            } catch (error) {
+                console.error('Error switching to cafe mode:', error);
+                alert('There was an error switching to cafe mode. Please try again.');
+            }
+        });
+
+        window.onclick = function(event) {
+            if (event.target == cafeModal) {
+                cafeModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
+        // AJAX Formspree submission for Bilwaa contact form
+        const bilwaaForm = document.getElementById('bilwaaContactForm');
+        const thankYouMsg = document.getElementById('thankYouMsg');
+        if (bilwaaForm) {
+            bilwaaForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const formData = new FormData(bilwaaForm);
+                const action = bilwaaForm.getAttribute('action');
+                try {
+                    const response = await fetch(action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    if (response.ok) {
+                        bilwaaForm.style.display = 'none';
+                        thankYouMsg.style.display = 'block';
+                    } else {
+                        alert('There was a problem submitting your form. Please try again.');
+                    }
+                } catch (err) {
+                    alert('There was a problem submitting your form. Please try again.');
+                }
+            });
+        }
+
+        // Hamburger menu toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navUl = document.querySelector('nav ul');
+        if (hamburgerBtn && navUl) {
+            hamburgerBtn.addEventListener('click', function() {
+                hamburgerBtn.classList.toggle('active');
+                navUl.classList.toggle('active');
+                // Accessibility
+                hamburgerBtn.setAttribute('aria-expanded', navUl.classList.contains('active'));
+            });
+            // Optional: close menu when a link is clicked (for single-page nav)
+            navUl.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburgerBtn.classList.remove('active');
+                    navUl.classList.remove('active');
+                    hamburgerBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        new Carousel({
+            images: ["imgA.jpg", "imgB.jpg", "imgC.jpg"],
+            slidesContainer: document.getElementById('slides'),
+            indicatorsContainer: document.getElementById('indicators'),
+            prevBtn: document.getElementById('prevBtn'),
+            nextBtn: document.getElementById('nextBtn'),
+            imagesPerSlide: window.innerWidth <= 768 ? 1 : 2
+        });
+
+        // Add swipe support for mobile
+        (function() {
+            const carousel = document.querySelector('.carousel');
+            let startX = 0;
+            let endX = 0;
+            let isSwiping = false;
+
+            if (carousel) {
+                carousel.addEventListener('touchstart', function(e) {
+                    if (e.touches.length === 1) {
+                        startX = e.touches[0].clientX;
+                        isSwiping = true;
+                    }
+                });
+
+                carousel.addEventListener('touchmove', function(e) {
+                    if (!isSwiping) return;
+                    endX = e.touches[0].clientX;
+                });
+
+                carousel.addEventListener('touchend', function(e) {
+                    if (!isSwiping) return;
+                    const diffX = endX - startX;
+                    if (Math.abs(diffX) > 50) { // Minimum swipe distance
+                        if (diffX < 0) {
+                            // Swiped left, go to next slide
+                            document.getElementById('nextBtn').click();
+                        } else {
+                            // Swiped right, go to previous slide
+                            document.getElementById('prevBtn').click();
+                        }
+                    }
+                    isSwiping = false;
+                    startX = 0;
+                    endX = 0;
+                });
+            }
+        })();
+    </script>
+    <!-- <script>
+        const menuImage = document.getElementById("menuImage");
+        const filterButtons = document.getElementById("filterButtons");
+    
+        // Placeholder images per category (you can change these to your actual image URLs)
+        const categoryImages = {
+          "all": "Menu-all.jpg",
+          "starters": "starters.jpg",
+          "soup-contintal": "soup continantal.jpg",
+          "soup-asian": "soup continantal.jpg",
+          "continental": "continantal.jpg",
+          "asian": "asian.jpg",
+          "tandoor": "tandoori.jpg",
+          "pizza": "pizza.jpg",
+          "salad": "salad.jpg",
+          "dim-sum": "dimsum.jpg",
+          "indian-curry": "indiancurry.jpg",
+          "sushi": "sushi.jpg",
+          "steam-bao": "steam bao.jpg",
+          "rice-pulao": "rice and pulao.jpg",
+          "roti": "roti.jpg",
+          "desert": "rice and pulao.jpg"
+        };
+    
+        function updateMenuImage(category) {
+          const imageUrl = categoryImages[category] || categoryImages["all"];
+          const img = menuImage;
+          
+          // Remove fade-in class to start fade out
+          img.classList.remove('fade-in');
+          
+          // Wait for fade out, then change image and fade in
+          setTimeout(() => {
+              img.src = imageUrl;
+              // Force a reflow
+              void img.offsetWidth;
+              // Add fade-in class
+              img.classList.add('fade-in');
+          }, 300);
+        }
+    
+        // Initial image load
+        updateMenuImage("all");
+    
+        // Button click handler
+        filterButtons.addEventListener("click", (e) => {
+          if (e.target.tagName === "BUTTON") {
+            document.querySelectorAll(".filter-buttons button").forEach(btn => btn.classList.remove("active"));
+            e.target.classList.add("active");
+            const category = e.target.getAttribute("data-category");
+            updateMenuImage(category);
+          }
+        });
+      </script> -->
+    <!-- <script>
+        const images = [
+          "finalmenu.jpg",
+          "soups-1.jpg",
+          "starters-2.jpg",
+          "starter -continental.jpg",
+          "starters-asian.jpg",
+          "tandoori-4.jpg",
+          "sandwitch.jpg",
+          "pizza-6.jpg",
+          "maincourse-con7.jpg",
+          "maincourse-con8.jpg",
+          "maincourse-con9.jpg",
+          "maincourse-dimsum10.jpg",
+          "mincourse-ricepulao11.jpg",
+          "roti.jpg"
+        ];
+      
+        const slidesContainer = document.getElementById('slides');
+        const indicatorsContainer = document.getElementById('indicators');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+      
+        const imagesPerSlide = 2;
+        const totalSlides = Math.ceil(images.length / imagesPerSlide);
+        let currentSlideIndex = 0;
+      
+        // Create slides dynamically
+        function createSlides() {
+            for (let i = 0; i < totalSlides; i++) {
+                const slide = document.createElement('div');
+                slide.className = 'slide';
+        
+                const start = i * imagesPerSlide;
+                const end = start + imagesPerSlide;
+                const slideImages = images.slice(start, end);
+        
+                slideImages.forEach((src, idx) => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.alt = 'Image ${start + idx + 1}';
+                slide.appendChild(img);
+                });
+        
+                slidesContainer.appendChild(slide);
+            }
+      
+            updateCarousel();
+        }
+      
+        // Update carousel position
+        function updateCarousel() {
+            slidesContainer.style.transform = 'translateX(-${currentSlideIndex * 100}%)';
+            updateIndicators();
+            updateButtons();
+        }
+      
+        // Navigation functions
+        function nextSlide() {
+            if (currentSlideIndex < totalSlides - 1) {
+                currentSlideIndex++;
+                updateCarousel();
+            }
+        }
+      
+        function prevSlide() {
+            if (currentSlideIndex > 0) {
+                currentSlideIndex--;
+                updateCarousel();
+            }
+        }
+      
+        // Create indicator dots
+        function createIndicators() {
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.classList.add('indicator');
+                dot.addEventListener('click', () => {
+                currentSlideIndex = i;
+                updateCarousel();
+                });
+                indicatorsContainer.appendChild(dot);
+            }
+            updateIndicators();
+        }
+      
+        // Update active indicator
+        function updateIndicators() {
+            const dots = document.querySelectorAll('.indicator');
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlideIndex);
+            });
+        }
+      
+        // Enable/disable buttons
+        function updateButtons() {
+          prevBtn.disabled = currentSlideIndex === 0;
+          nextBtn.disabled = currentSlideIndex === totalSlides - 1;
+        }
+      
+        // Initialize
+        createSlides();
+        createIndicators();
+        updateCarousel();
+      
+        // Attach event listeners
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+    </script> -->
+    
+    <!-- <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script> -->
+    <script>
+    (function() {
+      const wrapper = document.querySelector('.reviews-carousel-wrapper');
+      const track = document.querySelector('.carousel-track');
+      const leftBtn = document.querySelector('.reviews-nav-left');
+      const rightBtn = document.querySelector('.reviews-nav-right');
+      const cards = document.querySelectorAll('.review-card');
+      let marqueePaused = false;
+      let scrollIndex = 0;
+      const cardsToShow = window.innerWidth < 600 ? 1 : 3;
+      const totalCards = cards.length;
+
+      // Duplicate cards for seamless marquee
+      if (track && cards.length > 0) {
+        for (let i = 0; i < cardsToShow; i++) {
+          track.appendChild(cards[i].cloneNode(true));
+        }
+      }
+
+      function pauseMarquee() {
+        wrapper.classList.add('marquee-paused');
+        marqueePaused = true;
+        clearTimeout(wrapper.resumeTimeout);
+        wrapper.resumeTimeout = setTimeout(resumeMarquee, 4000);
+      }
+      function resumeMarquee() {
+        wrapper.classList.remove('marquee-paused');
+        marqueePaused = false;
+      }
+      function scrollToIndex(idx) {
+        pauseMarquee();
+        const cardWidth = cards[0].offsetWidth + 32; // 32px gap
+        track.style.transition = 'transform 0.6s cubic-bezier(0.4,0,0.2,1)';
+        track.style.transform = `translateX(${-idx * cardWidth}px)`;
+        scrollIndex = idx;
+      }
+      leftBtn.addEventListener('click', function() {
+        if (scrollIndex > 0) scrollToIndex(scrollIndex - 1);
+        else scrollToIndex(totalCards - cardsToShow);
+      });
+      rightBtn.addEventListener('click', function() {
+        if (scrollIndex < totalCards - cardsToShow) scrollToIndex(scrollIndex + 1);
+        else scrollToIndex(0);
+      });
+      wrapper.addEventListener('mouseenter', pauseMarquee);
+      wrapper.addEventListener('mouseleave', resumeMarquee);
+    })();
+    </script>
+    
+</body>
+</html>
